@@ -2,7 +2,7 @@ pipeline {
     
     agent { 
         node {
-            label 'docker-maven-alpine'
+            label 'docker-agent-alpine'
             }
       }
     stages {
