@@ -10,7 +10,6 @@ pipeline {
             steps{
                 echo "PATH = ${M2_HOME}/bin:${PATH}"
                 echo "M2_HOME = /opt/maven"
-				echo "JAVA_HOME = /opt/java/openjdk"
             }
         }
         stage('Test') {
