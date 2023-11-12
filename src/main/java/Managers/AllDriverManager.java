@@ -29,11 +29,11 @@ public class AllDriverManager {
             case CHROME:
                 //WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                //chromeOptions.addArguments("--headless", "--window-size=1644,868");
+                chromeOptions.addArguments("--headless", "--window-size=1644,868");
 
                 chromeOptions.setAcceptInsecureCerts(true);
                 String proejctpath=System.getProperty("user.dir");
-                System.setProperty("webdriver.chrome.driver", proejctpath+"\\drivers\\chromedriver-win64\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", proejctpath+"\\drivers\\chromedriver-linux64\\chromedriver");
                 webDriver = new ChromeDriver(chromeOptions);
                 //webDriver.manage().window().maximize();
                 break;
