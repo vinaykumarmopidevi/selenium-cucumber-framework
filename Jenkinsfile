@@ -14,9 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-			withMaven(maven: 'mvn') {
 				sh "mvn clean test"
-			}
                 
             }
  
