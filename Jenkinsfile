@@ -1,6 +1,10 @@
 pipeline {
     
-    agent any
+    agent { 
+        node {
+            label 'windows'
+            }
+      }
 	tools {
         maven "MAVEN"
         jdk "JDK"
