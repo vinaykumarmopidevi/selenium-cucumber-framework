@@ -29,13 +29,13 @@ public class AllDriverManager {
             case CHROME:
                 //WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-               // chromeOptions.addArguments("--headless", "--window-size=1644,868");
+                //chromeOptions.addArguments("--headless", "--window-size=1644,868");
 
                 chromeOptions.setAcceptInsecureCerts(true);
                 String proejctpath=System.getProperty("user.dir");
                 System.setProperty("webdriver.chrome.driver", proejctpath+"\\drivers\\chromedriver-win64\\chromedriver.exe");
                 webDriver = new ChromeDriver(chromeOptions);
-                webDriver.manage().window().maximize();
+                //webDriver.manage().window().maximize();
                 break;
             case FIREFOX:
 

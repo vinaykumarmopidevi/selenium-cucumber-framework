@@ -12,6 +12,7 @@ public class PageObjectManager {
     private ProductDetailPage productDetailPage;
     private ScandicLoginPage scandicLoginPage;
     private MakeMyTripPage makeMyTripPage;
+    private SauceLoginPage sauceLoginPage;
     public PageObjectManager(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
@@ -52,5 +53,12 @@ public class PageObjectManager {
             makeMyTripPage = new MakeMyTripPage(webDriver);
         }
         return makeMyTripPage;
+    }
+    public SauceLoginPage getSauceLoginPage() {
+
+        if (sauceLoginPage == null) {
+            sauceLoginPage = new SauceLoginPage(webDriver);
+        }
+        return sauceLoginPage;
     }
 }
